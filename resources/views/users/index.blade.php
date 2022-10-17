@@ -16,15 +16,15 @@
             @csrf
             <div class="mb-3">
                 <label class="form-label">Email address</label>
-                <input type="email" class="form-control" aria-describedby="emailHelp" name="email" placeholder="Email">
+                <input type="email" class="form-control" aria-describedby="emailHelp" name="email" placeholder="Email" value="{{ old('email') }}">
             </div>
             <div class="mb-3">
                 <label class="form-label">Name</label>
-                <input class="form-control" type="text" name="name" placeholder="Name">
+                <input class="form-control" type="text" name="name" placeholder="Name" value="{{ old('name') }}">
             </div>
             <div class="mb-3">
                 <label class="form-label">Message</label>
-                <input class="form-control" type="text" name="message" placeholder="Message">
+                <input class="form-control" type="text" name="message" placeholder="Message" value="{{ old('message') }}">
             </div>
             <div class="center">
                 <button type="submit" class="btn btn-primary">Submit</button>

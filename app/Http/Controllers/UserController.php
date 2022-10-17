@@ -41,7 +41,7 @@ class UserController extends Controller
         $validated = $request->validate([
             'email' => 'required|email|unique:users|max:255',
             'name' => 'required|max:50',
-            'message' => 'required|max:512'
+            'message' => 'required|max:255'
         ]);
 
         User::create($validated);
